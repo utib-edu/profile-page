@@ -1,0 +1,180 @@
+body {
+    font-family: 'Kodchasan';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Begin:: Background */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg div:first-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./bg/bg.svg);
+    background-size: 40px;
+}
+
+.bg div:last-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.694);
+}
+
+/* End:: Background */
+
+/* Begin:: Title */
+.title {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 140px;
+    opacity: 0;
+    animation: fadein .07s ease .8s 5 alternate forwards;
+}
+
+.title h1 {
+    position: relative;
+    font-size: 40px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    margin: 0;
+    height: 60px;
+    color: #777;
+    border-left: 30px solid rgba(0, 0, 0, 0.276);
+    overflow: hidden;
+}
+
+.title h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    animation: slide-right .4s ease 1.1s reverse forwards;
+}
+
+.title p {
+    position: relative;
+    width: 100%;
+    font-size: 10px;
+    text-align: right;
+    color: #fff;
+    margin-top: 3px;
+    height: 15px;
+    padding-right: 8px;
+    background-color: rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.title p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #aaa;
+    animation: slide-left .4s ease 1.2s reverse forwards;
+}
+
+/* End:: Title */
+
+/* Begin:: Profile box */
+.profile-box .page {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    opacity: 0;
+    animation: other-page__show-page 1s ease 1.4s forwards;
+}
+
+.profile-box .page .member .icon {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+
+}
+
+.profile-box .page .member img {
+    vertical-align: bottom;
+}
+
+.profile-box .page .member .name {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 180px;
+    padding: 6px 0;
+    background-color: #fff;
+    border-left: 30px solid #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+
+.profile-box .page .member .info {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 420px;
+}
+
+.profile-box .page .member .info p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.profile-box .page .member .info p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+.profile-box .page .member .sub-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.profile-box .page .member .links {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.profile-box .page .member .links a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0082ff;
+    display: inline-block;
+    margin-right: 25px;
+    text-decoration: none;
+}
+/* End:: Profile box */
